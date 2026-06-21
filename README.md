@@ -13,7 +13,7 @@ Users can discover books through a swipe-based interface, organize their reading
 - AI-generated book hooks and summaries
 - Add books to your reading list instantly
 
-1. Library
+2. Library
 
 - Organize books into:
   - Want to Read
@@ -21,14 +21,14 @@ Users can discover books through a swipe-based interface, organize their reading
   - Finished
 - Personal reading bookshelf
 
-1. Reading Progress
+3. Reading Progress
 
 - Track pages read
 - Reading progress bars
 - Mark books as completed
 - Reading streak tracking
 
-1. Reading Insights
+4. Reading Insights
 
 - Total pages read
 - Books completed
