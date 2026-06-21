@@ -1,17 +1,20 @@
 # # 📚 Lorely
 
-Lorely is an AI-powered reading platform that combines the best elements of Goodreads, Tinder, Duolingo, and Spotify Wrapped into a single reading experience.
+Lorely is a modern reading companion that helps readers discover books, organize their library, track reading progress, and build consistent reading habits.
 
-Users can discover books through a swipe-based interface, organize their reading journey, track progress, build reading habits, and gain insights into their reading patterns.
+Inspired by the simplicity of Goodreads, the engagement of Duolingo, and the insights of Spotify Wrapped, Lorely provides a focused reading experience for book lovers.
+
+LIVE DEMO:
+https://lorely-ten.vercel.app/
 
 ## Features
 
 1. Discover
 
-- Tinder-style book discovery
-- Swipe through curated book recommendations
-- AI-generated book hooks and summaries
-- Add books to your reading list instantly
+- Swipe-based book discovery experience
+- Explore curated book recommendations
+- Search millions of books using the Open Library API
+- Add books directly to your personal library
 
 2. Library
 
@@ -24,16 +27,17 @@ Users can discover books through a swipe-based interface, organize their reading
 3. Reading Progress
 
 - Track pages read
-- Reading progress bars
+- Moitor Reading progress 
 - Mark books as completed
-- Reading streak tracking
+- View reading streaks
 
 4. Reading Insights
 
 - Total pages read
 - Books completed
 - Genre breakdown
-- Spotify Wrapped-inspired reading analytics
+- Reading statistics dashboard
+- Lorely Wrapped-inspired reading analytics
 
 ## Tech Stack
 
@@ -48,9 +52,17 @@ Users can discover books through a swipe-based interface, organize their reading
 - React Context API
 - useReducer
 
--> Persistence
+-> Data Persistence
 
 - Local Storage
+
+-> External APIs
+
+- Open Library API
+
+-> Deployment
+
+- Vercel
 
 -> Version Control
 
@@ -93,11 +105,8 @@ src/
 
 ### Clone Repository
 
-```bash
+git clone https://github.com/harshithasundar/lorely.git
 
-git clone (https://github.com/harshithasundar/lorely.git)
-
-```
 
 ## Install Dependencies
 
@@ -109,25 +118,27 @@ npm run dev
 
 Open:
 
-(http://localhost:5173)
+http://localhost:5173
 
 
-LIVE DEMO:
-https://lorely-ten.vercel.app/
-
----
 
 ## 📸 Screenshots
 
 ### Discover
 
-screenshots/discover.png
+screenshots/discover
+
+### Search Books
+
+screenshots/search
 
 ### Library
 
-screenshots/library.png
+screenshots/library
 
-screenshots/library reading.png
+screenshots/library1
+
+screenshots/library2
 
 ### Progress
 
@@ -137,45 +148,31 @@ screenshots/progress.png
 
 ## Current MVP
 
-- [x] Book Discovery
-
-- [x] Reading Library
-
-- [x] Reading Progress Tracking
-
-- [x] Reading Analytics
-
-- [x] Local Storage Persistence
+- Current MVP
+- Book Discovery
+- Book Search
+- Personal Library
+- Reading Progress Tracking
+- Reading Analytics
+- Reading Streaks
+- Local Storage Persistence
+- Responsive Design
+- Live Deployment
 
 ---
 
 ## Future Roadmap
+User Authentication
+Supabase Integration
+Cloud Sync
+Reading Goals
+AI Recommendations
+Reading Challenges
+Enhanced Analytics
 
-### Phase 2
+## Author
 
-- User Authentication
-- User Profiles
-- Supabase Integration
-- Cloud Data Sync
-
-### Phase 3
-
-- AI Reading Coach
-- Personalized Recommendations
-- Reading Goals & Challenges
-- Social Features
-
-### Phase 4
-
-- Lorely Wrapped
-- Monthly Reading Reports
-- Advanced Analytics
-
----
-
-## 👩‍💻 Author
-
-**Harshitha Sundar**
+Harshitha Sundar
 
 Computer Science Engineering Student  
 
@@ -185,4 +182,4 @@ SASTRA Deemed University
 
 ## 📜 License
 
-This project is currently under development and intended for educational and portfolio purposes..
+This project is intended for educational, learning, and portfolio purposes.
