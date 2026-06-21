@@ -103,6 +103,14 @@ function lorelyReducer(state, action) {
 function buildDerived(books) {
   let discoverBooks = books.filter((b) => b.status === 'discover')
 
+if (discoverBooks.length === 0) {
+  discoverBooks = books.filter(
+    (b) =>
+      b.status === 'want-to-read' ||
+      b.status === 'currently-reading'
+  )
+}
+
   if (discoverBooks.length === 0) {
     discoverBooks = books.filter((b) => b.status === 'skipped')
   }
