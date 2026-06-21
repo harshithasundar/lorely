@@ -111,6 +111,10 @@ Open:
 
 (http://localhost:5173)
 
+
+LIVE DEMO:
+https://lorely-ten.vercel.app/
+
 ---
 
 ## 📸 Screenshots
