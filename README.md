@@ -95,7 +95,7 @@ src/
 
 ```bash
 
-git clone [https://github.com/harshithasundar/lorely.git](https://github.com/harshithasundar/lorely.git)
+git clone (https://github.com/harshithasundar/lorely.git)
 
 ```
 
@@ -109,7 +109,7 @@ npm run dev
 
 Open:
 
-[http://localhost:5173](http://localhost:5173)
+(http://localhost:5173)
 
 ---
 
