@@ -134,7 +134,9 @@ export default function ProgressView() {
   } = useLorely()
 
   const totalBooks = books.filter((b) => b.status !== 'skipped').length
-
+  const currentlyReading = books.filter(
+    (b) => b.status === 'currently-reading'
+  ).length
   return (
     <div className="flex flex-1 flex-col gap-5 px-4 pb-4 pt-2">
       <header className="text-center">
@@ -162,6 +164,11 @@ export default function ProgressView() {
           value={totalPagesRead.toLocaleString()}
           subtitle="lifetime total"
         />
+        <StatCard
+    label="Currently Reading"
+    value={currentlyReading}
+    subtitle="active books"
+  />
       </div>
 
       <GenreBreakdown
