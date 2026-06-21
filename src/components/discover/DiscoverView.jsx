@@ -4,7 +4,7 @@ import BookCard from './BookCard'
 import EmptyDiscover from './EmptyDiscover'
 
 export default function DiscoverView() {
-  const { discoverBooks, skipBook, wantToRead } = useLorely()
+  const { discoverBooks, addToWantToRead, skipBook } = useLorely()
   const [animating, setAnimating] = useState(null)
 
   const currentBook = discoverBooks[0]
@@ -14,7 +14,7 @@ export default function DiscoverView() {
     setAnimating(action)
     setTimeout(() => {
       if (action === 'skip') skipBook(currentBook.id)
-      else wantToRead(currentBook.id)
+      else addToWantToRead(currentBook.id)
       setAnimating(null)
     }, 280)
   }
