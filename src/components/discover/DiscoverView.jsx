@@ -1,4 +1,5 @@
-import { useState } from 'react'
+import BookSearch from './BookSearch'
+ import { useState } from 'react'
 import { useLorely } from '../../hooks/useLorely'
 import BookCard from './BookCard'
 import EmptyDiscover from './EmptyDiscover'
@@ -34,6 +35,8 @@ export default function DiscoverView() {
           left to explore
         </p>
       </header>
+      
+      <BookSearch />
 
       <div
         className={`mb-6 flex-1 transition-all duration-300 ease-out ${

@@ -9,6 +9,7 @@ const ACTIONS = {
   START_READING: 'START_READING',
   LOG_PAGES: 'LOG_PAGES',
   MARK_FINISHED: 'MARK_FINISHED',
+  ADD_BOOK: 'ADD_BOOK',
 }
 
 function createInitialState() {
@@ -87,6 +88,12 @@ function lorelyReducer(state, action) {
             : book,
         ),
       }
+    
+    case ACTIONS.ADD_BOOK:
+      return {
+        ...state,
+        books: [...state.books, action.payload],
+      }
 
     default:
       return state
@@ -137,6 +144,11 @@ export function LorelyProvider({ children }) {
         dispatch({ type: ACTIONS.LOG_PAGES, payload: { bookId, pages } }),
       markFinished: (id) =>
         dispatch({ type: ACTIONS.MARK_FINISHED, payload: id }),
+      addBook: (book) =>
+        dispatch({
+          type: ACTIONS.ADD_BOOK,
+          payload: book,
+        }),
     }),
     [],
   )
