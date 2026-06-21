@@ -21,7 +21,19 @@ export default function DiscoverView() {
   }
 
   if (!currentBook) {
-    return <EmptyDiscover />
+    return (
+      <div className="flex flex-1 flex-col px-4 pb-4 pt-2">
+        <header className="mb-4 text-center">
+          <h1 className="text-2xl font-bold tracking-tight">
+            <span className="gradient-text">Discover</span>
+          </h1>
+        </header>
+  
+        <BookSearch />
+  
+        <EmptyDiscover />
+      </div>
+    )
   }
 
   return (
@@ -35,7 +47,7 @@ export default function DiscoverView() {
           left to explore
         </p>
       </header>
-      
+
       <BookSearch />
 
       <div
