@@ -1,16 +1,184 @@
-# React + Vite
+# # 📚 Lorely
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Lorely is an AI-powered reading platform that combines the best elements of Goodreads, Tinder, Duolingo, and Spotify Wrapped into a single reading experience.
 
-Currently, two official plugins are available:
+Users can discover books through a swipe-based interface, organize their reading journey, track progress, build reading habits, and gain insights into their reading patterns.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+1. Discover
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Tinder-style book discovery
+- Swipe through curated book recommendations
+- AI-generated book hooks and summaries
+- Add books to your reading list instantly
 
-## Expanding the ESLint configuration
+1. Library
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Organize books into:
+  - Want to Read
+  - Currently Reading
+  - Finished
+- Personal reading bookshelf
+
+1. Reading Progress
+
+- Track pages read
+- Reading progress bars
+- Mark books as completed
+- Reading streak tracking
+
+1. Reading Insights
+
+- Total pages read
+- Books completed
+- Genre breakdown
+- Spotify Wrapped-inspired reading analytics
+
+## Tech Stack
+
+->Frontend
+
+- React
+- Vite
+- Tailwind CSS
+
+-> State Management
+
+- React Context API
+- useReducer
+
+-> Persistence
+
+- Local Storage
+
+-> Version Control
+
+- Git
+- GitHub
+
+---
+
+# Project Structure
+
+src/
+
+├── assets/
+
+├── components/
+
+│   ├── discover/
+
+│   ├── library/
+
+│   ├── progress/
+
+│   └── layout/
+
+├── context/
+
+├── data/
+
+├── hooks/
+
+├── utils/
+
+├── App.jsx
+
+└── main.jsx
+
+---
+
+## Getting Started
+
+### Clone Repository
+
+```bash
+
+git clone [https://github.com/harshithasundar/lorely.git](https://github.com/harshithasundar/lorely.git)
+
+```
+
+## Install Dependencies
+
+npm install
+
+## Run Development Server
+
+npm run dev
+
+Open:
+
+[http://localhost:5173](http://localhost:5173)
+
+---
+
+## 📸 Screenshots
+
+### Discover
+
+screenshots/discover.png
+
+### Library
+
+screenshots/library.png
+
+screenshots/library reading.png
+
+### Progress
+
+screenshots/progress.png
+
+---
+
+## Current MVP
+
+- [x] Book Discovery
+
+- [x] Reading Library
+
+- [x] Reading Progress Tracking
+
+- [x] Reading Analytics
+
+- [x] Local Storage Persistence
+
+---
+
+## Future Roadmap
+
+### Phase 2
+
+- User Authentication
+- User Profiles
+- Supabase Integration
+- Cloud Data Sync
+
+### Phase 3
+
+- AI Reading Coach
+- Personalized Recommendations
+- Reading Goals & Challenges
+- Social Features
+
+### Phase 4
+
+- Lorely Wrapped
+- Monthly Reading Reports
+- Advanced Analytics
+
+---
+
+## 👩‍💻 Author
+
+**Harshitha Sundar**
+
+Computer Science Engineering Student  
+
+SASTRA Deemed University
+
+---
+
+## 📜 License
+
+This project is currently under development and intended for educational and portfolio purposes..
